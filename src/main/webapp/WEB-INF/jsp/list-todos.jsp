@@ -2,14 +2,16 @@
 <html>
 <head>
     <title> Todo's for ${name} </title>
+    <link href="webjars/bootstrap/4.4.1/css/bootstrap.min.css"
+          rel="stylesheet">
 </head>
 
 
 <body>
-    <H1>Your Todos</H1>
-    <table>
+    <div class="container">
+    <table class="table table-striped">
         <caption>
-            Your todos are
+            This is the list of your todos
         </caption>
         <thead>
             <tr>
@@ -29,7 +31,12 @@
         </tbody>
     </table>
 
-<a href="/add-todo">Add a Todo</a>
+    <div class="button">
+        <a class="button" href="/add-todo">Add a Todo</a>
+    </div>
 
+    <script src="webjars/jquery/3.4.1/jquery.min.js"></script>
+    <script src="webjars/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    </div>
 </body>
 </html>
